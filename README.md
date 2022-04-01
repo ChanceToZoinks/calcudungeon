@@ -90,7 +90,7 @@ In total that leaves you with 10.0 items!
 ```
 And there you go! 5+5 is in fact 10!
 
-Commands are executed as you'd expect NOT in order, but in operator precendence order. Let's see an example of that:
+Commands are executed as you'd expect NOT in order, but in operator precedence order. Let's see an example of that:
 
 ### Example Calculation Operator Precedence (random event)
 ```

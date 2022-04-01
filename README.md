@@ -44,7 +44,7 @@ Input commands to get objects from each room and move between them.
 
 Moving between rooms adds a binary arithmetic operation to the queue along with the contents of the room you left. When you're ready to compute just give the signal! 
 
-The arithmetic operations are randomized every game, and if you REALLY want to see the possible commands just look at the tuples defined at the top of `calcudungeon.py`. Maybe I'll update that part to be a little more flexible (probably not).
+The arithmetic operations are randomized every game, and if you REALLY want to see the possible commands just look at the tuples defined at the top of [calcudungeon.py](calcudungeon.py). Maybe I'll update that part to be a little more flexible (probably not).
 
 ### Example Calculation Basics (5 + 5 = 10)
 ```

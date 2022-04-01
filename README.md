@@ -21,7 +21,7 @@ Play the game -> get the answers. No two games are the same!
 
 ## Running the game
 ```
-git clone git@github.com/ChanceToZoinks/calcudungeon.git
+git clone git@github.com:ChanceToZoinks/calcudungeon.git
 cd calcudungeon
 pip install -r requirements.txt
 python3 calcudungeon.py
@@ -29,7 +29,7 @@ python3 calcudungeon.py
 
 or if you dont have python installed there is Docker:
 ```
-git clone git@github.com/ChanceToZoinks/calcudungeon.git
+git clone git@github.com:ChanceToZoinks/calcudungeon.git
 cd calcudungeon
 docker run --rm -it $(docker build -q .)
 ```

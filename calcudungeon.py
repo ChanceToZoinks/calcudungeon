@@ -286,7 +286,7 @@ class Dungeon:
                     self.symbol_map,
                 )
 
-    def _random_event(self, prob: float = 0) -> bool:
+    def _random_event(self, prob: float = 0.2) -> bool:
         return random.random() <= prob
 
     # the map is not a grid there is no notion of distance so (east -> north) and (north -> east) wont take you to the same place

@@ -40,6 +40,15 @@ or if you dont have python or Docker installed (in 2022???) there is an executab
 
 See the [releases page](https://github.com/ChanceToZoinks/calcudungeon/releases/latest)
 
+to build the binary from source:
+
+```
+pip install pyinstaller
+git clone git@github.com:ChanceToZoinks/calcudungeon.git
+cd calcudungeon
+pyinstaller --onefile calcudungeon.py
+```
+
 ## How to play
 Input commands to get objects from each room and move between them.
 

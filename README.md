@@ -30,10 +30,7 @@ docker run --rm -it $(docker build -q .)
 
 or if you dont have python or Docker installed (in 2022???) there is an executable (for Windows):
 
-```
-See the releases page:
-https://github.com/ChanceToZoinks/calcudungeon/releases/latest
-```
+See the [releases page](https://github.com/ChanceToZoinks/calcudungeon/releases/latest)
 
 ## How to play
 Input commands to get objects from each room and move between them.

@@ -387,43 +387,45 @@ class Game:
                 )
             except ValueError:  # im a merciful god i wont stop ctrl + c from working
                 continue
-
-            if cmd in quit_cmds:
-                self._describe_inventory()
-                print(f"In total that leaves you with {self._compute()} items!")
-                break
-            elif cmd in inspect_commands:
-                target = args[0]
-                if target in directions:
-                    print(self.dungeon.lookdir(target, self.math_symbol_map))
-                elif target in self.dungeon.current_room.wb.O:
-                    print(self.dungeon.lookobj())
-            elif cmd in take_commands:
-                num, target = args
-                if (
-                    self.dungeon.current_room.wb.O.lower() in target
-                    or target in self.dungeon.current_room.wb.O.lower()
-                ) and self._isfloat(num):
-                    self.dungeon.take(float(num))
-                    print(f"You {cmd} {num} {self.dungeon.current_room.wb.O}.\n-------------------")
-            elif cmd in move_commands:
-                direction = args[0]
-                if direction in directions:
-                    print(f"You {cmd} {direction}.")
-                    self.dungeon.move(direction)
-                    if self.dungeon.current_room.random_event:
-                        _ = self.dungeon.get_random_path_point()
-                        print(
-                            f"Uh oh! {random.choice(random_events)} You lost half your {self.dungeon.map[_].wb.O}."
-                        )
-                        self.dungeon.grabbed_items[_] /= 2
+            try:
+                if cmd in quit_cmds:
+                    self._describe_inventory()
+                    print(f"In total that leaves you with {self._compute()} items!")
+                    break
+                elif cmd in inspect_commands:
+                    target = args[0]
+                    if target in directions:
+                        print(self.dungeon.lookdir(target, self.math_symbol_map))
+                    elif target in self.dungeon.current_room.wb.O:
+                        print(self.dungeon.lookobj())
+                elif cmd in take_commands:
+                    num, target = args
+                    if (
+                        self.dungeon.current_room.wb.O.lower() in target
+                        or target in self.dungeon.current_room.wb.O.lower()
+                    ) and self._isfloat(num):
+                        self.dungeon.take(float(num))
+                        print(f"You {cmd} {num} {self.dungeon.current_room.wb.O}.\n-------------------")
+                elif cmd in move_commands:
+                    direction = args[0]
+                    if direction in directions:
+                        print(f"You {cmd} {direction}.")
+                        self.dungeon.move(direction)
+                        if self.dungeon.current_room.random_event:
+                            _ = self.dungeon.get_random_path_point()
+                            print(
+                                f"Uh oh! {random.choice(random_events)} You lost half your {self.dungeon.map[_].wb.O}."
+                            )
+                            self.dungeon.grabbed_items[_] /= 2
+                        self._describe_room(self.dungeon.current_room)
+                elif cmd in describe_words:
                     self._describe_room(self.dungeon.current_room)
-            elif cmd in describe_words:
-                self._describe_room(self.dungeon.current_room)
-            elif cmd in inventory_words:
-                self._describe_inventory()
-            elif cmd in ("help", "h", "help me"):
-                print("lol nah\n-------------------")
+                elif cmd in inventory_words:
+                    self._describe_inventory()
+                elif cmd in ("help", "h", "help me"):
+                    print("lol nah\n-------------------")
+            except:  # lol whats an exception?
+                continue
 
 
 if __name__ == "__main__":

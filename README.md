@@ -8,6 +8,7 @@
 
 Play the game -> get the answers. No two games are the same!
 ```
+[Link to this page](https://chancetozoinks.github.io/calcudungeon/)
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)

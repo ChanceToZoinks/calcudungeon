@@ -279,7 +279,7 @@ You are holding 0 bananas and 0 gold dubloons.
 In total that leaves you with 0 items!
 ```
 
-Also, the default number of items you pick up in a room is zero. So make sure your formula doesn't get messed up by handing a random 0 in it. Let's see a quick example to demonstrate.
+Also, the default number of items you pick up in a room is zero. So make sure your formula doesn't get messed up by having a random 0 in it. Let's see a quick example to demonstrate.
 
 ### Example Default Zeros
 ```

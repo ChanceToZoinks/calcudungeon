@@ -1,17 +1,23 @@
-# Calcudungeon
+```
+   ______      __                     __                                 
+  / ____/___ _/ /______  __      ____/ /_  ______  ____ ____  ____  ____ 
+ / /   / __ `/ / ___/ / / /_____/ __  / / / / __ \/ __ `/ _ \/ __ \/ __ \
+/ /___/ /_/ / / /__/ /_/ /_____/ /_/ / /_/ / / / / /_/ /  __/ /_/ / / / /
+\____/\__,_/_/\___/\__,_/      \__,_/\__,_/_/ /_/\__, /\___/\____/_/ /_/ 
+                                                /____/                   
 
 Play the game -> get the answers. No two games are the same!
+```
 
 ## Table of Contents
-- [Calcudungeon](#calcudungeon)
-  - [Table of Contents](#table-of-contents)
-  - [Running the game](#running-the-game)
-  - [How to play](#how-to-play)
-    - [Example Calculation Basics (5 + 5 = 10)](#example-calculation-basics-5--5--10)
-    - [Example Calculation Operator Precedence (random event)](#example-calculation-operator-precedence-random-event)
-    - [Actual Example Calculation Operator Precedence (2 + 3 * 4 = 14)](#actual-example-calculation-operator-precedence-2--3--4--14)
-    - [Example Backspace](#example-backspace)
-    - [Example Default Zeros](#example-default-zeros)
+- [Table of Contents](#table-of-contents)
+- [Running the game](#running-the-game)
+- [How to play](#how-to-play)
+  - [Example Calculation Basics (5 + 5 = 10)](#example-calculation-basics-5--5--10)
+  - [Example Calculation Operator Precedence (random event)](#example-calculation-operator-precedence-random-event)
+  - [Actual Example Calculation Operator Precedence (2 + 3 * 4 = 14)](#actual-example-calculation-operator-precedence-2--3--4--14)
+  - [Example Backspace](#example-backspace)
+  - [Example Default Zeros](#example-default-zeros)
 
 ## Running the game
 ```
